@@ -23,11 +23,12 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
                  
-        <!-- Sonar Integration -->     
-        <sonar.organization>kummari</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>cloudbinary-9am</sonar.projectKey>
-        <sonar.login>5a0f48fd3dce190d2899dd83cf44825689781994</sonar.login>
+        <!-- Sonar Integration --> 
+             
+        mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=cloudbinary-9 \
+  -Dsonar.host.url=http://192.168.100.153:9000 \
+  -Dsonar.login=sqp_434c83ef6cc9a21e8847415681083ea1df1add44
              
     </properties>
 
