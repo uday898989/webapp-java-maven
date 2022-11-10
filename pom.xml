@@ -19,10 +19,18 @@
     </parent>
 
     <properties>
+             
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
-    </properties>
+    
+         <!-- sonar integration -->
+             mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=cloudbinary-9 \
+  -Dsonar.host.url=http://192.168.100.153:9000 \
+  -Dsonar.login=sqp_434c83ef6cc9a21e8847415681083ea1df1add44
+         
+     </properties>
 
     <dependencies>
         <!-- Spring Boot Web -->
