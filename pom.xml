@@ -25,9 +25,10 @@
                  
         <!-- Sonar Integration -->     
         <sonar.organization>kummari</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>cloudbinary-9am</sonar.projectKey>
-        <sonar.login>5a0f48fd3dce190d2899dd83cf44825689781994</sonar.login>
+        mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=java \
+  -Dsonar.host.url=http://192.168.100.153:9000 \
+  -Dsonar.login=sqp_fd5966eecb240cc1408cb5d94b177f1a06fe12e3
              
     </properties>
 
